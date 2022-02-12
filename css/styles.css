@@ -32,6 +32,8 @@
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 1px solid red;
 }
 
@@ -63,7 +65,7 @@
   color: var(--primary-text-color);
 
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -116,20 +118,36 @@
 
 /* features */
 .features .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--secondary-text-color);
+
   line-height: 1.71;
 }
 
 .features-title {
+  margin-bottom: 10px;
+  margin-top: 0;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
+.features.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* hero section */
-.hero {
+.hero.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--secondary-bgd-color);
+
   text-align: center;
 }
 
@@ -150,6 +168,8 @@
 .hero-button {
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
+  min-width: 200px;
+  padding: 10px 32px;
 
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -163,8 +183,13 @@
   border-radius: 4px;
 }
 
+/* what we do section */
+.work.section {
+  padding-bottom: 93px;
+}
+
 /* team section */
-.team {
+.team.section {
   background-color: var(--special-bgd-color);
 }
 
@@ -175,15 +200,28 @@
 }
 
 .member.proffession {
+  margin-bottom: 30px;
+
   color: var(--secondary-text-color);
 }
 
 .member.name {
+  margin-bottom: 10px;
+  margin-top: 30px;
+
   font-weight: 500;
 }
 
+.team.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* footer */
-.footer {
+.footer.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--secondary-bgd-color);
 }
 
