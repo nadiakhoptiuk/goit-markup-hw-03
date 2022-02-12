@@ -18,6 +18,8 @@
   --primary-bgd-color: #ffffff;
   --secondary-bgd-color: #2f303a;
   --special-bgd-color: #f5f4fa;
+
+  --border-color: #ececec;
 }
 
 .page {
@@ -35,6 +37,11 @@
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid red;
+}
+
+/* header section */
+.page-header {
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* logotype */
@@ -254,6 +261,16 @@
 /* Page Portfolio styles */
 /* Page Portfolio styles */
 
+.portfolio.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title.no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* buttons style */
 .button {
   color: var(--primary-text-color);
@@ -265,6 +282,7 @@
   line-height: 1.62;
   text-align: center;
 
+  padding: 6px 22px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -277,6 +295,9 @@
 }
 
 .project-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -286,6 +307,9 @@
 }
 
 .projects .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--secondary-text-color);
 
   font-size: 16px;
