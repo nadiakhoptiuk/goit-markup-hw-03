@@ -252,7 +252,6 @@
 
 .members .item:not(:last-child) {
   margin-right: 30px;
-  border-bottom: ;
 }
 
 .member {
@@ -329,6 +328,12 @@
 }
 
 /* buttons style */
+.buttons.list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .button {
   padding: 6px 22px;
   cursor: pointer;
@@ -344,18 +349,17 @@
   text-align: center;
 }
 
+.buttons .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button:hover,
 .button:focus {
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
 }
 
-.buttons.list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
+/* Projects list */
 .projects.list {
   display: flex;
   flex-wrap: wrap;
@@ -385,14 +389,20 @@
   text-decoration: none;
 }
 
-.projects .item {
+/* DOESN'T WORK */
+/* .projects .item {
+  width: calc((100%-90px) / 3);
+  background-color: teal;
+}
+
+.projects .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+} */
+
+.projects .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.projects .item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.projects .item:nth-child(n + 4) {
-  margin-top: 30px;
+.projects .item:nth-child(-n + 6) {
+  margin-bottom: 30px;
 }
