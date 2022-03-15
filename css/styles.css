@@ -36,8 +36,6 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  outline: 1px solid red;
 }
 
 /* style of list markers */
@@ -397,13 +395,16 @@
   line-height: 1.87;
 }
 
-.project-link {
-  text-decoration: none;
-}
-
 .projects .item {
   width: calc((100% - 60px) / 3);
   border: 1px solid var(--secondary-border-color);
+  background-color: var(--primary-bgd-color);
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
 }
 
 .projects .item:not(:nth-child(3n)) {
@@ -415,5 +416,13 @@
 }
 
 .projects .sign {
-  margin: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.projects .img {
+  display: block;
+  width: 100%;
 }
