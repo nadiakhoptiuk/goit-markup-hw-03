@@ -58,6 +58,12 @@
   text-align: center;
 }
 
+/* hidden titles */
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 /* header section */
 .page-header {
   border-bottom: 1px solid var(--primary-border-color);
@@ -194,12 +200,12 @@
   padding-bottom: 94px;
 }
 
-.features .hidden {
-  margin-bottom: 0;
-}
-
 .features.list {
   display: flex;
+}
+
+.feature.item {
+  width: 270px;
 }
 
 .feature.item:not(:last-child) {
@@ -271,7 +277,11 @@
 
 .members .photo {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+}
+
+.about-member {
+  padding: 30px 59px;
 }
 
 .member.name {
@@ -282,8 +292,7 @@
 }
 
 .member.proffession {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
 
   color: var(--secondary-text-color);
 }
