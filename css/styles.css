@@ -315,6 +315,10 @@
   line-height: 1.71;
 }
 
+.contacts .item {
+  margin-bottom: 9px;
+}
+
 .address.physical {
   color: var(--white-text-color);
 }
